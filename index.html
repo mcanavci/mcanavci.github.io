@@ -19,6 +19,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap');
 
     *,*::before,*::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     html, body { margin: 0; padding: 0; }
     body {
       font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
@@ -56,21 +57,20 @@
       line-height: 1.45;
     }
     .interests-label {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-style: italic;
-      font-size: 17px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
       color: #555;
       margin: 0 0 6px;
     }
     ul.interests {
       list-style: none;
       padding: 0;
-      margin: 0 0 16px;
+      margin: 0 0 18px;
     }
     ul.interests li {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-style: italic;
-      font-size: 17px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
       color: #1a1a1a;
       padding: 2px 0 2px 16px;
       position: relative;
@@ -86,9 +86,29 @@
       font-style: italic;
       font-size: 17px;
       color: #555;
-      margin: 0;
+      margin: 0 0 24px;
       line-height: 1.5;
     }
+
+    /* ─── Top nav (anchor links) ─── */
+    .topnav {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 13px;
+      color: #888;
+      margin: 0 0 8px;
+      letter-spacing: 0.02em;
+    }
+    .topnav a {
+      color: #888;
+      text-decoration: none;
+      padding: 0;
+    }
+    .topnav a:hover {
+      color: #1F2A44;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .topnav .sep { color: #ccc; padding: 0 6px; }
 
     /* ─── Section headers ─── */
     h2 {
@@ -132,9 +152,8 @@
     }
     ul.now li:last-child { border-bottom: none; }
     ul.now li strong {
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-style: italic;
-      font-weight: 500;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
       color: #1a1a1a;
     }
 
@@ -245,8 +264,13 @@
     </ul>
     <p class="closing">I write about what I find fascinating about business and life.</p>
 
+    <!-- ────── Top nav ────── -->
+    <nav class="topnav">
+      <a href="#now">now</a><span class="sep">·</span><a href="#projects">projects</a><span class="sep">·</span><a href="#writing">writing</a><span class="sep">·</span><a href="#contact">contact</a>
+    </nav>
+
     <!-- ────── Now ────── -->
-    <h2>Now</h2>
+    <h2 id="now">Now</h2>
     <p class="updated">Last updated 15 May 2026.</p>
     <ul class="now">
       <li><strong>Focusing on the craft of sales and GTM with Claude Code.</strong> Treating it less like an assistant and more like an apprentice — building outbound, research, and discovery workflows from first principles instead of inheriting templates.</li>
@@ -261,7 +285,7 @@
     <p>Currently also advising early-stage B2B founders on 0→1 GTM: ICP, messaging, list building, founder-led outbound, and sales-call coaching.</p>
 
     <!-- ────── Projects ────── -->
-    <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
     <div class="project">
       <h3>dopafit</h3>
       <p>Chrome extension. <em>Description coming.</em></p>
@@ -280,7 +304,7 @@
     -->
 
     <!-- ────── Writing ────── -->
-    <h2>Writing</h2>
+    <h2 id="writing">Writing</h2>
     <a class="post-link" href="posts/the-perfect-sale.html">
       <h3>The perfect sale</h3>
       <div class="meta">15 May 2026 · 3 min read</div>
@@ -298,7 +322,7 @@
     -->
 
     <!-- ────── Contact ────── -->
-    <div class="foot">
+    <div class="foot" id="contact">
       <span class="lead">Contact</span>
       <a href="mailto:mca.avci@gmail.com">mca.avci@gmail.com</a> · <a href="https://linkedin.com/in/mcavci">LinkedIn</a> · <a href="https://github.com/mcanavci">GitHub</a>
     </div>
