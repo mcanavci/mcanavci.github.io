@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>M. Can Avci</title>
-  <meta name="description" content="Account Executive at TransferRoom. Advising B2B founders on 0→1 GTM. Writing about the craft of sales and AI-native outbound.">
+  <title>Can Avci — Sales and GTM for B2B SaaS</title>
+  <meta name="description" content="Can Avci. Sales and GTM for B2B SaaS. Interested in 0→1 GTM, positioning, and pain- and time-based sales methodologies. Writing about business and life.">
   <link rel="canonical" href="https://mcanavci.github.io/">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="M. Can Avci">
-  <meta property="og:description" content="Account Executive at TransferRoom. Advising B2B founders on 0→1 GTM. Writing about the craft of sales and AI-native outbound.">
+  <meta property="og:title" content="Can Avci — Sales and GTM for B2B SaaS">
+  <meta property="og:description" content="Sales and GTM for B2B SaaS. Interested in 0→1 GTM, positioning, and pain- and time-based sales methodologies.">
   <meta property="og:url" content="https://mcanavci.github.io/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
@@ -42,18 +42,52 @@
       font-size: 34px;
       font-weight: 500;
       color: #1F2A44;
-      margin: 0 0 6px;
+      margin: 0 0 12px;
       letter-spacing: -0.01em;
       line-height: 1.15;
     }
-    .subhead {
+    .tagline {
       font-family: 'Source Serif 4', Georgia, serif;
       font-style: italic;
       font-size: 18px;
       font-weight: 400;
-      color: #555;
-      margin: 0 0 8px;
+      color: #1F2A44;
+      margin: 0 0 16px;
       line-height: 1.45;
+    }
+    .interests-label {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      color: #555;
+      margin: 0 0 6px;
+    }
+    ul.interests {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+    }
+    ul.interests li {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      color: #1a1a1a;
+      padding: 2px 0 2px 16px;
+      position: relative;
+    }
+    ul.interests li::before {
+      content: "·";
+      position: absolute;
+      left: 4px;
+      color: #1F2A44;
+    }
+    .closing {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-style: italic;
+      font-size: 17px;
+      color: #555;
+      margin: 0;
+      line-height: 1.5;
     }
 
     /* ─── Section headers ─── */
@@ -104,30 +138,67 @@
       color: #1a1a1a;
     }
 
-    /* ─── Writing ─── */
-    .post {
-      padding: 18px 0;
+    /* ─── Projects ─── */
+    .project {
+      padding: 16px 0;
       border-bottom: 1px solid #f0f0f0;
     }
-    .post:last-child { border-bottom: none; }
-    .post h3 {
+    .project:last-child { border-bottom: none; }
+    .project h3 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 19px;
+      font-weight: 500;
+      margin: 0 0 4px;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+    .project p { font-size: 16px; color: #333; margin: 0 0 6px; }
+    .project .proj-link {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-style: italic;
+      font-size: 14px;
+      color: #1F2A44;
+      text-decoration: none;
+    }
+    .project .proj-link:hover { color: #000; text-decoration: underline; }
+
+    /* ─── Writing (post listing) ─── */
+    .post-link {
+      display: block;
+      padding: 18px 0;
+      border-bottom: 1px solid #f0f0f0;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s ease;
+    }
+    .post-link:last-child { border-bottom: none; }
+    .post-link:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+    .post-link:hover h3 { color: #1F2A44; }
+    .post-link h3 {
       font-family: 'Source Serif 4', Georgia, serif;
       font-size: 20px;
       font-weight: 500;
       margin: 0 0 4px;
       color: #1a1a1a;
       line-height: 1.3;
+      transition: color 0.15s ease;
     }
-    .post .meta {
+    .post-link .meta {
       font-family: 'Source Serif 4', Georgia, serif;
       font-style: italic;
       font-size: 13px;
       color: #888;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
-    .post p { font-size: 16px; color: #333; }
-    .post.empty h3, .post.empty p { color: #888; font-style: italic; }
-    .post.empty h3 { font-style: italic; }
+    .post-link .preview {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+      line-height: 1.5;
+    }
 
     /* ─── Footer / contact ─── */
     .foot {
@@ -153,7 +224,8 @@
     @media (max-width: 600px) {
       .wrap { padding: 44px 20px 64px; }
       .name { font-size: 28px; }
-      .subhead { font-size: 16px; }
+      .tagline { font-size: 16px; }
+      .interests-label, ul.interests li, .closing { font-size: 16px; }
       body { font-size: 16px; }
       h2 { margin-top: 44px; }
     }
@@ -163,8 +235,15 @@
   <main class="wrap">
 
     <!-- ────── Header ────── -->
-    <h1 class="name">M. Can Avci</h1>
-    <p class="subhead">Account Executive at TransferRoom · advising B2B founders on 0→1 GTM · writing here when I have something useful to say.</p>
+    <h1 class="name">Can Avci</h1>
+    <p class="tagline">Sales and GTM for B2B SaaS.</p>
+    <p class="interests-label">Interested in:</p>
+    <ul class="interests">
+      <li>0→1 GTM</li>
+      <li>Positioning</li>
+      <li>Pain- and time-based sales methodologies</li>
+    </ul>
+    <p class="closing">I write about what I find fascinating about business and life.</p>
 
     <!-- ────── Now ────── -->
     <h2>Now</h2>
@@ -177,37 +256,45 @@
 
     <!-- ────── What I do ────── -->
     <h2>What I do</h2>
-    <p>Sell B2B SaaS at <a href="https://www.transferroom.com">TransferRoom</a> — a data and marketplace platform for football clubs. Own net-new pipeline across emerging markets in CEE, MENA, and Africa.</p>
-    <p>Before that, I cofounded a compliance consultancy in Istanbul (5–7 paying customers, ~$8k MRR), and coordinated commercial cycles across the Turkish Süper Lig — including the 2024–27 domestic media-rights tender that went to beIN Media Group at $182M per season.</p>
+    <p>Sell B2B SaaS at <a href="https://www.transferroom.com">TransferRoom</a>, a data and marketplace platform for football clubs. Own net-new pipeline across emerging markets in CEE, MENA, and Africa.</p>
+    <p>Before that, I cofounded a compliance consultancy in Istanbul (5–7 paying customers, ~$8k MRR), and coordinated commercial cycles across the Turkish Süper Lig including the 2024–27 domestic media-rights tender that went to beIN Media Group at $182M per season.</p>
     <p>Currently also advising two early-stage founders on 0→1 GTM: Billr.io (usage-based billing) and ThreatLocator (cybersecurity). ICP, messaging, list building, founder-led outbound, and sales-call coaching.</p>
+
+    <!-- ────── Projects ────── -->
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>dopafit</h3>
+      <p>Chrome extension. <em>Description coming.</em></p>
+    </div>
+    <div class="project">
+      <h3>nomadistanbul</h3>
+      <p><em>Description coming.</em></p>
+    </div>
+    <!--
+      To add a project: copy a block above, replace name + description, add link:
+      <div class="project">
+        <h3>project name</h3>
+        <p>Short description of what it is and who it's for.</p>
+        <a class="proj-link" href="https://example.com">example.com →</a>
+      </div>
+    -->
 
     <!-- ────── Writing ────── -->
     <h2>Writing</h2>
-    <div class="post">
+    <a class="post-link" href="posts/the-perfect-sale.html">
       <h3>The perfect sale</h3>
       <div class="meta">15 May 2026 · 3 min read</div>
-      <p>Imagine the last time you bought something without hesitation, without even asking the price.</p>
-      <p>What made that purchase so fast and decisive?</p>
-      <p>Here are two of mine.</p>
-      <p><strong>Cat toys.</strong> I came home from a friend's house. He had a full setup for his cat (toys, accessories, the works), and the cat looked thrilled. I went home thinking I don't invest enough in my own cat's well-being. The thought triggered a strong feeling. Within two minutes I'd bought the top five highest-rated cat toys on the marketplace.</p>
-      <p><strong>Claude Max.</strong> I'd been on the Pro plan and constantly hitting my token limits. It took me a few hours to decide, honestly. But the deciding thought was <em>why not, I can cancel later</em>. $100/month is an interesting number. On one hand, not much. On the other, around 5x a Netflix subscription or a Pro OpenAI/Claude plan.</p>
-      <p>One purchase is B2C. The other is B2B. The cat toys were pure emotion. The Claude Max subscription was a professional decision.</p>
-      <p>I find the psychology of buying decisions fascinating.</p>
-      <p><strong>What makes us buy?</strong></p>
-      <p>I truly believe the perfect sale is about timing and pain.</p>
-      <p>Our job in sales and marketing is to do everything we can to get to the sales conversation at that particular perfect moment.</p>
-      <p>That's why <strong>who</strong> we target and <strong>when</strong> we reach them matters more than closing techniques and hacks.</p>
-      <p>When I'm confused about a deal, I imagine the scene of selling water to a person in the desert. Pain and timing change the context of the sale.</p>
-      <p>I'll keep exploring this going forward.</p>
-    </div>
+      <p class="preview">Two recent purchases I made without hesitation, and what they taught me about timing and pain in sales.</p>
+    </a>
     <!--
-      To add a new post, replace the .post.empty block with:
-      <div class="post">
-        <h3>Title of the post.</h3>
-        <div class="meta">15 May 2026 · 4 min read</div>
-        <p>First paragraph...</p>
-        <p>Second paragraph...</p>
-      </div>
+      To add a new post:
+      1. Create a new file in /posts/ folder
+      2. Add a link block here:
+      <a class="post-link" href="posts/your-slug.html">
+        <h3>Post title</h3>
+        <div class="meta">DD Month YYYY · X min read</div>
+        <p class="preview">One- or two-sentence preview to spark curiosity.</p>
+      </a>
     -->
 
     <!-- ────── Contact ────── -->
